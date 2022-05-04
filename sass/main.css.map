@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8EAAI;AEAZ,OAAO,CAAC,wFAAI;AAAZ,OAAO,CAAC,wFAAI",
+    "sources": [
+        "main.scss",
+        "base/_variables.scss",
+        "base/_typography.scss",
+        "base/_typography.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
