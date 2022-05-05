@@ -13,8 +13,12 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 .container {
-  max-width: 1366px;
+  max-width: 100vw;
 }
 
 table th {
@@ -39,5 +43,14 @@ table .inner_head {
 
 .white-txt {
   color: #ffffff;
+}
+
+@media print {
+  table {
+    font-size: 11px;
+  }
+  @page {
+    size: landscape;
+  }
 }
 /*# sourceMappingURL=main.css.map */
