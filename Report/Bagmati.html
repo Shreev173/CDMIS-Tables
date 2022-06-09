@@ -50,22 +50,28 @@
         border: 1px solid #828282;
       }
 
+      /* table {
+        font-size: 12px;
+      } */
+
       .gray-100 {
         color: #333333;
       }
 
+      .table td,
+      .table th {
+        padding: 2px;
+      }
+
       @media print {
         table {
-          font-size: 11px;
+          font-size: 12px;
         }
 
-        /* tr {
-          display: flex;
-        } */
-
-        /* @page {
-          size: landscape;
-        } */
+        @page {
+          size: A4 landscape;
+          margin-left: 2px;
+        }
       }
     </style>
   </head>
@@ -81,15 +87,17 @@
       <table class="table mt-5">
         <thead>
           <tr>
-            <th scope="col" rowspan="3">S.N</th>
-            <th scope="col" class="text-center" rowspan="3">Output Number</th>
-            <th scope="col" class="text-center" rowspan="3">Date</th>
-            <th scope="col" class="text-center" rowspan="3">Name of Event</th>
-            <th scope="col" class="text-center" rowspan="3">Thematic Areas</th>
-            <th scope="col" class="text-center" rowspan="3">Targeted For</th>
-            <th scope="col" class="text-center" rowspan="3">Organized By</th>
-            <th scope="col" class="text-center" rowspan="3">
-              Total Beneficiaries
+            <th scope="col" rowspan="3" width="10px">S.N</th>
+            <th scope="col" rowspan="3" width="10px">Output Number</th>
+            <th scope="col" rowspan="3" width="10px">Date</th>
+            <th scope="col" rowspan="3" width="10px">Name of Event</th>
+            <th scope="col" rowspan="3" width="10px" class="text-center">
+              Thematic Areas
+            </th>
+            <th scope="col" rowspan="3" width="80px">Targeted For</th>
+            <th scope="col" rowspan="3" width="10px">Organized By</th>
+            <th scope="col" rowspan="3" width="10px">
+              Total Beneficiaries <br />
             </th>
             <th scope="col" class="text-center" colspan="3">
               Participant Gender
@@ -97,51 +105,57 @@
             <th scope="col" class="text-center" colspan="8">
               Participant's Ethnicity
             </th>
-            <th scope="col" class="text-center mb-5" rowspan="3">Disability</th>
-            <th scope="col" class="text-center mb-5" rowspan="3">
+            <th scope="col" class="text-center mb-5" rowspan="3" width="10px">
+              Disability
+            </th>
+            <th scope="col" class="text-center mb-5" rowspan="3" width="10px">
               Total Resource Person
             </th>
-            <th scope="col" class="text-center mb-5" rowspan="3">
+            <th scope="col" class="text-center mb-5" rowspan="3" width="10px">
               Estimated Vs Actual (Budget)
             </th>
-            <th scope="col" class="text-center mb-5" rowspan="3">Status</th>
+            <th scope="col" class="text-center mb-5" rowspan="3" width="10px">
+              Status
+            </th>
           </tr>
 
           <tr>
-            <th rowspan="3">Male</th>
-            <th rowspan="3">Female</th>
-            <th rowspan="3">Gender Minorities</th>
-            <th rowspan="3">Brahmin/<span class="d-block">Chhetri</span></th>
+            <th rowspan="3" width="10px">Male</th>
+            <th rowspan="3" width="10px">Female</th>
+            <th rowspan="3" width="10px">Gender Minorities</th>
+            <th rowspan="3" width="10px">
+              Brahmin /<span class="d-block">Chhetri</span>
+            </th>
             <th colspan="2">
               Aadhibasi /<span class="d-block">Janajati</span>
             </th>
-            <th colspan="2">Dalit</th>
-            <th rowspan="3">Madhesi</th>
-            <th rowspan="3">Muslim</th>
-            <th rowspan="3">Others</th>
+            <th colspan="2" class="text-center">Dalit</th>
+            <th rowspan="3" class="text-center" width="10px">Madhesi</th>
+            <th rowspan="3" class="text-center" width="10px">Muslim</th>
+            <th rowspan="3" class="text-center" width="10px">Others</th>
           </tr>
           <tr>
-            <th>Hill</th>
-            <th>Terai</th>
-            <th>Hill</th>
-            <th>Terai</th>
+            <th width="10px">Hill</th>
+            <th width="10px">Terai</th>
+            <th width="10px">Hill</th>
+            <th width="10px">Terai</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td class="text-center">5</td>
-            <td class="text-center">2078-12-02 to 2078-12-04</td>
-            <td class="text-center">This is for printttt 2</td>
-            <td class="text-center">
+            <td>5</td>
+            <td>2078-12-02 to 2078-12-04</td>
+            <td>This is for printttt 2</td>
+            <td>
               नेतृत्व विकास र सशक्तिकरण, कर र राजस्व व्यवस्थापन, सुशासन र
               सार्वजनिक तथा सामाजिक उत्तरदायित्व
             </td>
-            <td class="text-center">
+            <td>
               संघिय तह | अन्य कर्मचारी, प्रदेश तह | संघिय कर्मचारी, स्थानिय तह |
               संघिय कर्मचारी
             </td>
-            <td class="text-center">PCU, सङ्घीय, super admin</td>
+            <td>PCU, सङ्घीय, super admin</td>
             <td class="text-center">0</td>
             <td class="text-center">0</td>
             <td class="text-center">0</td>
@@ -155,13 +169,11 @@
             <td class="text-center">0</td>
             <td class="text-center">0</td>
             <td class="text-center">0</td>
-            <td class="text-center">
-              Total:0, Male:0, Female:0, Gender Minorities:0
-            </td>
+            <td>Total:0, Male:0, Female:0, Gender Minorities:0</td>
             <td class="text-center">100000.0 vs Not specified</td>
             <td class="text-center">Completed</td>
           </tr>
-          <tr>
+          <!-- <tr>
             <th scope="row">1</th>
             <td class="text-center">5</td>
             <td class="text-center">2078-12-02 to 2078-12-04</td>
@@ -193,8 +205,8 @@
             </td>
             <td class="text-center">100000.0 vs Not specified</td>
             <td class="text-center">Completed</td>
-          </tr>
-          <tr>
+          </tr> -->
+          <!-- <tr>
             <th scope="row">1</th>
             <td class="text-center">5</td>
             <td class="text-center">2078-12-02 to 2078-12-04</td>
@@ -226,7 +238,7 @@
             </td>
             <td class="text-center">100000.0 vs Not specified</td>
             <td class="text-center">Completed</td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </div>
